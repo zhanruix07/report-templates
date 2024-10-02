@@ -32,6 +32,17 @@
 \usepackage{subfloat}
 % 图片并排使用宏包
 
+\usepackage[T1]{fontenc} 
+%英文字体定义
+\usepackage{setspace}
+
+\usepackage{verbatim}
+\bibliographystyle{unsrt}
+\usepackage{tocloft}
+\usepackage{fancyhdr} 
+
+%''' 
+%以上为宏包的引用
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -42,3 +53,71 @@
 \usepackage[autolinebreaks,useliterate,numbered]{mcode} % Ability to paste smooth MATLAB code
 
 \newcommand{\figref}[1]{\figurename~\ref{#1}} %Nice reference to figures
+
+
+%%正文格式定义
+\setlength{\parskip}{5pt plus 1pt minus 1pt} % space between paragraphs
+\setlength{\parindent}{0pt} % paragraph indentation
+
+
+%页面格式编辑
+\usepackage{geometry}
+\geometry{top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm, headheight=15pt}
+
+
+
+%%以下部分编辑页眉与页脚
+%\pagestyle{fancy}
+%\fancyhf{} % 清除所有的页眉和页脚
+%\setlength{\headheight}{15pt} % 增加页眉的高度
+%\setlength{\headsep}{25pt}    % 增加页眉和正文之间的距离
+%\fancyhead[R]{Student Name: Zhan Ruixin}
+%\fancyhead[L]{Preliminary Report (ECM3175)} % 页眉左侧
+%\fancyfoot[C]{\thepage} % 底部中央页码
+%\renewcommand{\headrulewidth}{0pt} % 不显示页眉线
+%\renewcommand{\footrulewidth}{0pt} % 不显示页脚线
+
+
+
+%%正文格式定义
+%\setlength{\parskip}{5pt plus 1pt minus 1pt} % space between paragraphs
+%\setlength{\parindent}{0pt} % paragraph indentation
+
+
+
+
+%%目录
+% 标题格式
+%\renewcommand{\cfttoctitlefont}{\bfseries\fontsize{16}{19}\selectfont\Arial}
+%\renewcommand{\cftaftertoctitle}{\vspace{12pt}\hspace*{\fill}}
+
+% 目录项格式
+%\renewcommand{\cftsecfont}{\fontsize{11}{13}\selectfont}
+%\renewcommand{\cftsecpagefont}{\fontsize{11}{1}\selectfont}
+%\renewcommand{\cftsubsubsecfont}{\fontsize{11}{13}\selectfont}
+%\renewcommand{\cftsubsecindent}{0.39cm}
+%\renewcommand{\cftsubsubsecindent}{0.8cm} 
+% 调整目录行距
+
+% 调整目录行距和段前后距
+
+%\setlength{\cftbeforesecskip}{10pt}
+%\setlength{\cftbeforesubsecskip}{10pt}
+%\setlength{\cftbeforesubsubsecskip}{10pt}
+%\setlength{\cftbeforetoctitleskip}{0pt}
+%\setlength{\cftaftertoctitleskip}{10pt}
+%% 重命名
+%\renewcommand{\contentsname}{Table of Contents}
+
+%%
+
+% 设置“References”标题的格式
+% 设置参考文献标题 "References"
+%\titleformat{\section}
+%{\normalfont\bfseries\fontsize{18}{22}\selectfont\fontfamily{phv}\selectfont}
+%{\thesection}{1em}{}
+%\titlespacing*{\section}{0pt}{12pt}{12pt}
+%
+%% 设置参考文献列表的样式
+%\renewcommand{\cftsecfont}{\bfseries\fontsize{18}{22}\selectfont\fontfamily{phv}\selectfont}
+%\renewcommand{\cftsecpagefont}{\bfseries\fontsize{18}{22}\selectfont\fontfamily{phv}\selectfont}
