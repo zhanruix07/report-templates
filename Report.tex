@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage{indentfirst}
+% Defining all packages that are used in this document
+\input{Misc/preamble.tex}
+\title{
+ Solid Mechanics Coursework 
+ 
+  (Three-Point Bending/ Flexural Test)
+    }
+\author{
+Zhan RuiXin 710082148
+}
+\date{
+   2 December, 2022
+}
+\linespread{1.5}
+\begin{document}
+\maketitle
+%\setlength{\parindent}{2em}
+ % 段落前使用 /noindent
+%\renewcommand{\abstractname}{\large Oultine}
+\renewcommand{\abstractname}{\large Abstract}
+
+\begin{abstract}
+	\large
+Abstrac/Outline
+\end{abstract}
+\pagenumbering{gobble} % Turn off page numbering
+%\newpage
+%\tableofcontents
+%\newpage
+\pagenumbering{arabic} % Turn on normal pagenumbering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main contents - Do NOT write your text in main.tex! Use                     the tex files in the folders below
+\input{1.Introduction/introduction.tex}
+ %theory
+\input{2.Mathematical_model/mathematical_model.tex} 
+% method
+\input{3.Discussion/discussion.tex}
+%analyse
+\input{4.Results/results.tex}
+%result
+\input{5.Conclusion/conclusion.tex}
+%Conclusion
+
+\newpage
+\begin{thebibliography}{99}
+\bibitem{ref1} Text
+\bibitem{ref2} \url{URL}
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%\newpage
+%%\bibliography{mendeley.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
+%\appendix
+%\pagenumbering{roman}
+%\input{6.Appendix/appendix_A.tex}
+%\input{6.Appendix/appendix_B.tex}
+%\input{6.Appendix/appendix_C.tex}
+\newpage
+\input{Example/Example.tex}
+%用于存放各种样例
+
+
+
+\end{document}
